@@ -11,7 +11,7 @@ variables:
   CLIENT_OPENAPI_FOLDER: ${CI_PROJECT_DIR}/aas-registry-client/open-api
   CLIENT_OPENAPI_FILE: ${CLIENT_OPENAPI_FOLDER}/Plattform_i40-Registry-and-Discovery.yaml
   MAVEN_OPTS: "-Dmaven.repo.local=${CI_PROJECT_DIR}/.m2/repository"
-  MAVEN_CLI_OPTS: "-s ${CI_PROJECT_DIR}/.m2/settings.xml --batch-mode -Pgitlab"
+  MAVEN_CLI_OPTS: "-s ${CI_PROJECT_DIR}/.m2/settings.xml --batch-mode"
   TYPESCRIPT_FOLDER: ${CI_PROJECT_DIR}/typescript
   NPM_REPO: ${MAVEN_REPO_URL}/npm-hosted/  # same as for maven but with npm-hosted suffix
 
